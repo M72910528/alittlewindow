@@ -1,0 +1,15 @@
+@import "tailwindcss";
+html,body,#root{height:100%;margin:0;background:#0a0d24;overflow:hidden}
+body{font-family:'DM Sans',system-ui,sans-serif;font-weight:300;-webkit-tap-highlight-color:transparent}
+.serif{font-family:'Cormorant Garamond',Georgia,serif}
+.glass{background:rgba(18,16,44,.52);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border:1px solid rgba(255,220,170,.14);box-shadow:0 10px 40px rgba(0,0,0,.35)}
+button:focus-visible,input:focus-visible{outline:2px solid #ffb454;outline-offset:2px}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1);opacity:.55}50%{transform:translate(8px,-6px) scale(1.12);opacity:.9}}
+@keyframes fog{0%{transform:translateX(-6%)}100%{transform:translateX(6%)}}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important}}
+
+@keyframes sway{from{transform:rotate(-1.5deg)}to{transform:rotate(1.5deg)}}
+.brick{background:repeating-linear-gradient(#0000 0 26px,#d9c8aa 26px 28px),#f6ecd9;box-shadow:inset 0 0 0 1px #e8d8bd,0 10px 30px rgba(90,40,110,.25)}
+.pbrick{background:repeating-linear-gradient(90deg,#0000 0 46px,#e486ae 46px 48px),linear-gradient(#f7b3cf,#f19bbd);box-shadow:0 8px 24px rgba(90,40,110,.3)}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.09) translate(-1%,-1%)}}
